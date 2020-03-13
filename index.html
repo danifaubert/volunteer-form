@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Volunteer</title>
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+
+  <section class="contact push-2 gutter pad-t-2">
+    <div class="max-length">
+      <h1 class="not-bold">Want to go to Mars?</h1>
+      <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+
+<h1>Personal details</h1>
+<form class="push-0" method="POST" action="http://formspree.io/bradlet">
+        <div class="grid">
+          <div class="unit mega push xs-1 s-1 m-1 l-1-2 padding-right">
+            <label for="name">Full name</label>
+            <input id="name" name="name" required>
+            <p class="italic">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+          </div>
+
+          <div class="unit mega push xs-1 s-1 m-1 l-1-2 padding-right">
+            <label for="name">What should we call you?</label>
+            <input id="name" name="name" required>
+            <p class="italic">What all your friends call you, e.g. “Liz”.</p>
+          </div>
+
+          <div class="unit mega push xs-1 s-1 m-1 l-1-2 padding-right">
+            <label for="timedate">Date of birth</label>
+            <input type="date" id="timedate" required>
+          </div>
+
+          <div class="unit mega push xs-1 s-1 m-1 l-1-2">
+            <label for="subject">T-shirt size</label>
+            <select id="subject" name="_subject">
+              <option>Select a t-shirt size</option>
+              <option>Fitted: XS</option>
+              <option>Fitted: S</option>
+              <option>Fitted: M</option>
+              <option>Fitted: L</option>
+              <option>Fitted: XL</option>
+              <option>Straight-cut: XS</option>
+              <option>Straight-cut: S</option>
+              <option>Straight-cut: M</option>
+              <option>Straight-cut: L</option>
+              <option>Straight-cut: XL</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="push">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="me@me.com" name="email" required>
+        </div>
+
+        <fieldset class="push-none">
+          <legend class="italic not-bold mega">Mission statement</legend>
+        </fieldset>
+
+        <div class="push">
+          <label for="number">Why do you want to go to Mars?</label>
+          <textarea id="number" type="number" required></textarea>
+        </div>
+
+        <div class="center-content">
+          <button class="btn btn-light mega" type="submit">Register for the trip!</button>
+          <input type="hidden" name="_subject" value="Request to join the mission">
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
