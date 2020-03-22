@@ -2,8 +2,9 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Volunteer</title>
+  <title>Volunteer Sign-up</title>
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
@@ -13,11 +14,11 @@
 
   <section class="contact push-2 gutter pad-t-2">
     <div class="max-length">
-      <h1 class="not-bold">Want to go to Mars?</h1>
-      <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <h1 class="not-bold">Apply to be a tree planter</h1>
+      <p class="mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
 
-<h1>Personal details</h1>
-<form class="push-0" method="POST" action="http://formspree.io/bradlet">
+      <h1>Personal details</h1>
+      <form class="push-0" method="POST" action="http://formspree.io/bradlet">
         <div class="grid">
           <div class="unit mega push xs-1 s-1 m-1 l-1-2 padding-right">
             <label for="name">Full name</label>
@@ -64,13 +65,159 @@
         </fieldset>
 
         <div class="push">
-          <label for="number">Why do you want to go to Mars?</label>
-          <textarea id="number" type="number" required></textarea>
+          <label for="number">Phone number (optional)</label>
+          <textarea id="number" type="tel" required></textarea>
         </div>
 
-        <div class="center-content">
-          <button class="btn btn-light mega" type="submit">Register for the trip!</button>
-          <input type="hidden" name="_subject" value="Request to join the mission">
+        <hr>
+
+        <h2>Address</h2>
+
+        <div class="unit mega push xs-1 s-1 m-1 l-1-2 padding-right">
+          <label for="name">Street address</label>
+          <input id="name" name="_name" required>
+        </div>
+
+        <div class="unit mega push xs-1 s-1 m-1 l-1-2 padding-right">
+          <label for="name">City</label>
+          <input id="name" name="t_name" required>
+        </div>
+
+        <div class="unit mega push xs-1 s-1 m-1 l-1-2">
+          <label for="subject">Province</label>
+          <select id="subject" name="_subject">
+            <option>Select a province</option>
+            <option>Alberta</option>
+            <option>British Columbia</option>
+            <option>Manitoba</option>
+            <option>New Brunswick</option>
+            <option>Newfoundland & Labrador</option>
+            <option>Northwest Territories</option>
+            <option>Nova Scotia</option>
+            <option>Nunavut</option>
+            <option>Ontario</option>
+            <option>Prince Edward Island</option>
+            <option>Québec</option>
+            <option>Saskatchewan</option>
+            <option>Yukon</option>
+          </select>
+        </div>
+
+        <div class="unit mega push xs-1 s-1 m-1 l-1-2 padding-right">
+          <label for="name">Postal code</label>
+          <input id="name" name="name" required>
+        </div>
+
+        <hr>
+
+        <h2>What activities are you interested in helping with?</h2>
+
+        <div class="unit mega push xs-1 s-1 m-1 l-1-2 padding-right">
+        <input type="checkbox" id="apato">
+        <label for="apato">Digging holes</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Getting dirty</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Lifting heavy objects</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Driving people</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Transporting trees</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Taking photos</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Online publishing</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Managing people</label>
+        </div>
+
+        <h2>Do you have any experience with the following?</h2>
+
+        <div class="unit mega push xs-1 s-1 m-1 l-1-2 padding-right">
+        <input type="checkbox" id="apato">
+        <label for="apato">Shovels</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Hand-held GPS</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Writing & blogging</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Photography</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Trail & hill climbing</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Bush craft</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">ATVs</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Plant identification</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Special event planning</label>
+
+        <input type="checkbox" id="apato">
+        <label for="apato">Speaking to groups</label>
+        </div>
+
+        <hr>
+
+        <div>
+          <h2>Do you have a valid driver’s license?</h2>
+
+          <input type="radio" id="valid" name="license">
+          <label for="valid">Yes</label>
+
+          <input type="radio" id="valid_" name="license">
+          <label for="valid_">No</label>
+        </div>
+
+        <div>
+          <h2>Do you have a pick-up truck you’d be willing to use?</h2>
+
+          <input type="radio" id="pick-up" name="willing">
+          <label for="pick-up">Yes</label>
+
+          <input type="radio" id="pickup" name="willing">
+          <label for="pickup">No</label>
+        </div>
+
+        <div>
+          <h2>Do you have up-to-date first-aid certification?</h2>
+
+          <input type="radio" id="first-aid" name="certification">
+          <label for="first-aid">Yes</label>
+
+          <input type="radio" id="firstaid" name="certification">
+          <label for="firstaid">No</label>
+        </div>
+
+        <hr>
+
+        <div class="push">
+          <label for="details">Please let us know any comments or questions you may have.</label>
+          <p>(optional)</p>
+          <textarea id="details" name="message" required></textarea>
+        </div>
+        <hr>
+        <div>
+          <button class="btn btn-light mega" type="submit">Apply</button>
+        </div>
+        <p>© Tree Hugger International Organization</p>
+
+
         </div>
       </form>
     </div>
