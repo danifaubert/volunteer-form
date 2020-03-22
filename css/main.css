@@ -5,3 +5,22 @@ html {
 header {
   background-color: #70ad55;
 }
+
+header, h1 {
+  color: #fff;
+}
+
+.gutter {
+  padding-left: .5rem;
+  padding-right: 1.3rem;
+}
+
+.btn {
+  color: #fff;
+  background-color: #6e8c62;
+  border-color: #6e8c62;
+}
+
+footer {
+  background-color: #70ad55;
+}
