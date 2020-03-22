@@ -17,7 +17,9 @@
       <h1 class="not-bold">Apply to be a tree planter</h1>
       <p class="mega">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
 
+      <header>
       <h1>Personal details</h1>
+    </header>
       <form class="push-0" method="POST" action="http://formspree.io/bradlet">
         <div class="grid">
           <div class="unit mega push xs-1 s-1 m-1 l-1-2 padding-right">
@@ -28,7 +30,7 @@
 
           <div class="unit mega push xs-1 s-1 m-1 l-1-2 padding-right">
             <label for="-name">What should we call you?</label>
-            <input id="-name" name="legal" required>
+            <input id="-name" type="tel" name="legal" required>
             <p class="italic">What all your friends call you, e.g. “Liz”.</p>
           </div>
 
@@ -40,6 +42,7 @@
           <div class="unit mega push xs-1 s-1 m-1 l-1-2">
             <label for="subject">T-shirt size</label>
             <select id="subject" name="_subject">
+              <option value="">""</option>
               <option>Select a t-shirt size</option>
               <option>Fitted: XS</option>
               <option>Fitted: S</option>
@@ -215,7 +218,9 @@
         <div>
           <button class="btn btn-light mega" type="submit">Apply</button>
         </div>
+        <footer>
         <p>© Tree Hugger International Organization</p>
+      </footer>
 
       </form>
     </div>
