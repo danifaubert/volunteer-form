@@ -14,24 +14,24 @@
 
   <section class="contact">
     <div class="max-length">
-      <header class="gutter">
+      <header class="gutter bold">
         <h1 class="bold pad-t pad-b-1-2 push-0 exa">Apply to be a tree planter</h1>
         <p class="bold kilo pad-b-2">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
       </header>
 
-      <h2>Personal details</h2>
-      <form class="push-0" method="POST" action="http://formspree.io/bradlet">
+      <form class="push-0 gutter" method="POST" action="http://formspree.io/bradlet">
+        <h2>Personal details</h2>
         <div class="grid">
           <div class="unit mega push xs-1 s-1 m-1 l-1-2 padding-right">
             <label for="name">Full name</label>
             <input id="name" name="name" required>
-            <p class="italic">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+            <p class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
           </div>
 
           <div class="unit mega push xs-1 s-1 m-1 l-1-2 padding-right">
             <label for="-name">What should we call you?</label>
             <input id="-name" type="tel" name="legal" required>
-            <p class="italic">What all your friends call you, e.g. “Liz”.</p>
+            <p class="italic push-0 milli">What all your friends call you, e.g. “Liz”.</p>
           </div>
 
           <div class="unit mega push xs-1 s-1 m-1 l-1-2 padding-right">
@@ -42,8 +42,7 @@
           <div class="unit mega push xs-1 s-1 m-1 l-1-2">
             <label for="subject">T-shirt size</label>
             <select id="subject" name="_subject">
-              <option value="">""</option>
-              <option>Select a t-shirt size</option>
+              <option value="">Select a t-shirt size</option>
               <option>Fitted: XS</option>
               <option>Fitted: S</option>
               <option>Fitted: M</option>
@@ -60,16 +59,13 @@
 
         <div class="push">
           <label for="email">Email</label>
-          <input id="email" type="email" placeholder="me@me.com" name="email" required>
+          <input id="email" type="email" placeholder="" name="email" required>
         </div>
 
-        <fieldset class="push-none">
-          <legend class="italic not-bold mega">Mission statement</legend>
-        </fieldset>
-
         <div class="push">
-          <label for="number">Phone number (optional)</label>
-          <textarea id="number" required></textarea>
+          <label for="number">Phone number</label>
+          <span class="italic">(optional)</span>
+          <input id="number" name="number" required>
         </div>
 
         <hr>
@@ -110,6 +106,8 @@
           <label for="p-name">Postal code</label>
           <input id="p-name" name="name" required>
         </div>
+
+        <hr>
 
         <fieldset>
           <legend>What activities are you interested in helping with?</legend>
@@ -202,7 +200,7 @@
 
         <div class="push">
           <label class="bold" for="details">Please let us know any comments or questions you may have.</label>
-          <p>(optional)</p>
+          <span class="italic">(optional)</span>
           <textarea id="details" name="message" required></textarea>
         </div>
         <hr>
